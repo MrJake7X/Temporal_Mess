@@ -1,0 +1,203 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5910019192817916556
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8246096484944230914}
+  - component: {fileID: 5663799398010309550}
+  m_Layer: 0
+  m_Name: SwordWeapon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8246096484944230914
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5910019192817916556}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8993373359892667936}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5663799398010309550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5910019192817916556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a557e2b93323f4831a62221b200348c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WeaponName: 
+  WeaponCurrentlyActive: 1
+  InputAuthorized: 1
+  TriggerMode: 0
+  DelayBeforeUse: 0
+  DelayBeforeUseReleaseInterruption: 1
+  TimeBetweenUses: 1
+  TimeBetweenUsesReleaseInterruption: 1
+  UseBurstMode: 0
+  BurstLength: 3
+  BurstTimeBetweenShots: 0.1
+  MagazineBased: 0
+  MagazineSize: 30
+  AutoReload: 0
+  NoInputReload: 0
+  ReloadTime: 2
+  AmmoConsumedPerShot: 1
+  AutoDestroyWhenEmpty: 0
+  AutoDestroyWhenEmptyDelay: 1
+  PreventReloadIfAmmoEmpty: 0
+  CurrentAmmoLoaded: 0
+  WeaponAttachmentOffset: {x: 0, y: 0, z: 0}
+  FlipWeaponOnCharacterFlip: 1
+  RightFacingFlipValue: {x: 1, y: 1, z: 1}
+  LeftFacingFlipValue: {x: -1, y: 1, z: 1}
+  WeaponUseTransform: {fileID: 0}
+  WeaponShouldFlip: 1
+  LeftHandHandle: {fileID: 0}
+  RightHandHandle: {fileID: 0}
+  ModifyMovementWhileAttacking: 0
+  MovementMultiplier: 0
+  PreventAllMovementWhileInUse: 0
+  PreventAllAimWhileInUse: 0
+  RecoilForce: 0
+  Animators: []
+  PerformAnimatorSanityChecks: 0
+  MirrorCharacterAnimatorParameters: 0
+  WeaponAnimationID: 0
+  IdleAnimationParameter: 
+  StartAnimationParameter: MeleeAttackStart
+  DelayBeforeUseAnimationParameter: 
+  SingleUseAnimationParameter: 
+  UseAnimationParameter: 
+  DelayBetweenUsesAnimationParameter: 
+  StopAnimationParameter: 
+  ReloadStartAnimationParameter: 
+  ReloadAnimationParameter: 
+  ReloadStopAnimationParameter: 
+  WeaponAngleAnimationParameter: 
+  WeaponAngleRelativeAnimationParameter: 
+  EquippedAnimationParameter: 
+  InterruptedAnimationParameter: 
+  WeaponStartMMFeedback: {fileID: 0}
+  WeaponUsedMMFeedback: {fileID: 0}
+  WeaponUsedMMFeedbackAlt: {fileID: 0}
+  WeaponStopMMFeedback: {fileID: 0}
+  WeaponReloadMMFeedback: {fileID: 0}
+  WeaponReloadNeededMMFeedback: {fileID: 0}
+  WeaponReloadImpossibleMMFeedback: {fileID: 0}
+  InitializeOnStart: 0
+  Interruptable: 0
+  Flipped: 0
+  MeleeDamageAreaMode: 0
+  DamageAreaShape: 0
+  AreaOffset: {x: -1, y: 0, z: 0}
+  AreaSize: {x: 1, y: 1, z: 0}
+  TriggerFilter: 195
+  HitDamageableFeedback: {fileID: 0}
+  HitNonDamageableFeedback: {fileID: 0}
+  ExistingDamageArea: {fileID: 0}
+  InitialDelay: 0
+  ActiveDuration: 0.2
+  TargetLayerMask:
+    serializedVersion: 2
+    m_Bits: 8192
+  MinDamageCaused: 10
+  MaxDamageCaused: 10
+  Knockback: 0
+  KnockbackForce: {x: 10, y: 2, z: 0}
+  KnockbackDirection: 0
+  InvincibilityDuration: 0.5
+  CanDamageOwner: 0
+--- !u!1001 &8882321197239400907
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8246096484944230914}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 36d4bb14204386e4cbe4ea4da715f3d2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 36d4bb14204386e4cbe4ea4da715f3d2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 36d4bb14204386e4cbe4ea4da715f3d2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 36d4bb14204386e4cbe4ea4da715f3d2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 36d4bb14204386e4cbe4ea4da715f3d2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 36d4bb14204386e4cbe4ea4da715f3d2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 36d4bb14204386e4cbe4ea4da715f3d2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 36d4bb14204386e4cbe4ea4da715f3d2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 36d4bb14204386e4cbe4ea4da715f3d2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 36d4bb14204386e4cbe4ea4da715f3d2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 36d4bb14204386e4cbe4ea4da715f3d2,
+        type: 3}
+      propertyPath: m_Name
+      value: dagger
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 36d4bb14204386e4cbe4ea4da715f3d2, type: 3}
+--- !u!4 &8993373359892667936 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 36d4bb14204386e4cbe4ea4da715f3d2,
+    type: 3}
+  m_PrefabInstance: {fileID: 8882321197239400907}
+  m_PrefabAsset: {fileID: 0}
