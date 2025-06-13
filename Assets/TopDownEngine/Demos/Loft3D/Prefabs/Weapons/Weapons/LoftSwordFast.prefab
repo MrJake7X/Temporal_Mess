@@ -113,7 +113,7 @@ MonoBehaviour:
   MeleeDamageAreaMode: 0
   DamageAreaShape: 2
   AreaOffset: {x: 0, y: 0, z: 0}
-  AreaSize: {x: 4, y: 2, z: 4}
+  AreaSize: {x: 1, y: 2, z: 1}
   TriggerFilter: 195
   HitDamageableFeedback: {fileID: 0}
   HitNonDamageableFeedback: {fileID: 0}
@@ -372,6 +372,7 @@ MonoBehaviour:
   Unrestricted3DAim: 0
   AimCenter: 0
   ReticleMovesWithSlopes: 0
+  ScreenPointToRay: 0
   ReticleObstacleMask:
     serializedVersion: 2
     m_Bits: 9
